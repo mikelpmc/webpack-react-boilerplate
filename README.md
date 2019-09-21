@@ -1,6 +1,6 @@
 ## React boilerplate project
 
-#### Features
+#### Features
 
 - Webpack 4
 - Styled components support
