@@ -62,7 +62,9 @@
     "modulePaths": [
       "<rootDir>/src/components"
     ],
-    "setupTestFrameworkScriptFile": "<rootDir>/config/jest/setup.js",
+    "setupFilesAfterEnv": [
+      "<rootDir>/config/jest/setup.js"
+    ],
     "collectCoverageFrom": [
       "src/components/**/*.{js,jsx}"
     ],
