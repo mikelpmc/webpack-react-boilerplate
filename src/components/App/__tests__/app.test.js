@@ -4,6 +4,9 @@ import App from '../app';
 
 describe('App component', () => {
   test('renders wihout errors', () => {
-    mount(<App />);
+    const wrapped = mount(<App />);
+
+    const app = wrapped.find(App);
+    expect(app.exists()).toBeTruthy();
   });
 });
