@@ -1,10 +1,11 @@
-## React boilerplate project
+## React boilerplate
 
 #### Features
 
 - Webpack 4
 - Styled components support
 - Jest and Enzyme for testing
+- Cosmos 5
 - Eslint configuration
 
 #### Getting started
@@ -17,3 +18,5 @@
    `$ npm start`
 4. Run tests
    `$ npm test`
+5. Run Cosmos
+   `$ npm run cosmos`
