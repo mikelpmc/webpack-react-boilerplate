@@ -1,4 +1,5 @@
 require('webpack');
+const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
@@ -10,15 +11,15 @@ module.exports = {
   entry: './src/components/index.js',
   output: {
     filename: 'bundle.js',
-    path: '/dist',
-    publicPath: '/'
+    path: path.resolve(__dirname, 'build'),
+    publicPath: ''
   },
   devtool: '#cheap-module-inline-source-map',
   module: {
     rules: [
       {
         test: /(\.js|jsx)$/,
-        exclude: /node_modules/,
+        exclude: /(node_modules|build)/,
         loader: 'babel-loader'
       }
     ]
