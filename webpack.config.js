@@ -8,7 +8,7 @@ module.exports = {
   resolve: {
     extensions: ['.js', '.jsx']
   },
-  entry: './src/components/index.js',
+  entry: './src/index.js',
   output: {
     filename: 'bundle.js',
     path: path.resolve(__dirname, 'build'),
